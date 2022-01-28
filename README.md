@@ -15,5 +15,11 @@ It can be accessed through this URL: https://ibra-node-chat-app.herokuapp.com/
     - They will have the ability to send live messages to the chat.
     - They will have the ability to share their current location via a Google Maps link in the chat.
 
-## Tech Stack
+## How it Works
 - Created using Node.js, Express, Socket.io, and Mustache.js
+- The non-blocking nature of Node makes it well-suited for real-time applicationms such as chat apps, social media apps and more.
+- Using WebSocket protocol to support features that use bi-directional real-time communication.
+- Socket.io was chosen since it comes with everything needed to set up a WebSocket server using node. Using Socket.io we can:
+  -  Listen for events (a new user joining a chatroom or new message being sent to the chat room)
+  -  Broadcast/Emit events (sending out messages to particular sockets based on the event)
+- Since the chat application is serving up client-side assets, Express was also used to create the web app.
