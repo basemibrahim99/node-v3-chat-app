@@ -27,3 +27,5 @@ It can be accessed through this URL: https://ibra-node-chat-app.herokuapp.com/
   - A check is first made to see if the user's broswer supports the API.
     - If so, a call is made to the API to get the longitude and latitude, they are then injected into a Google Maps URL and sent in the chat.
     - If the browser does not support the API, the user will be notified of this. 
+- Event acknowledgements are also in place to handle errors and data validation:
+  - For example, if a user sends attempts a message with profane language, a callback will be used to send a message back to that user with a message saying 'Profanity is not allowed!' 
