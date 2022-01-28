@@ -23,3 +23,7 @@ It can be accessed through this URL: https://ibra-node-chat-app.herokuapp.com/
   - Socket.io was chosen since it comes with everything needed to set up a WebSocket server using node. Using Socket.io we can:
     -  Listen for events (a new user joining a chatroom or new message being sent to the chat room)
     -  Broadcast/Emit events (sending out messages to particular sockets based on the event)
+- The ability to share the user's current location in implemented using the Geolocation API:
+  - A check is first made to see if the user's broswer supports the API.
+    - If so, a call is made to the API to get the longitude and latitude, they are then injected into a Google Maps URL and sent in the chat.
+    - If the browser does not support the API, the user will be notified of this. 
