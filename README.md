@@ -17,7 +17,7 @@ It can be accessed through this URL: https://ibra-node-chat-app.herokuapp.com/
 
 ## How it Works
 - Created using Node.js, Express, Socket.io, and Mustache.js
-- The non-blocking nature of Node makes it well-suited for real-time applicationms such as chat apps, social media apps and more.
+- The non-blocking nature of Node makes it well-suited for real-time applications such as chat apps, social media apps and more.
 - Since the chat application is serving up client-side assets, Express was also used to create the web app.
 - Using WebSocket protocol to support features that use bi-directional real-time communication.
   - Socket.io was chosen since it comes with everything needed to set up a WebSocket server using node. Using Socket.io we can:
